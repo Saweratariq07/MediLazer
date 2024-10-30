@@ -1,0 +1,20 @@
+@keyframes pulse {
+  0% {
+    background-color: #e7cd22;
+    box-shadow: 0 0 0 rgba(231, 205, 34, 0);
+  }
+
+  50% {
+    background-color: #f9e29a;
+    box-shadow: 0 0 20px rgba(231, 205, 34, 1), 0 0 40px rgba(231, 205, 34, 1);
+  }
+
+  100% {
+    background-color: #e7cd22;
+    box-shadow: 0 0 0 rgba(231, 205, 34, 0);
+  }
+}
+
+.animate-button {
+  animation: pulse 2s infinite;
+}

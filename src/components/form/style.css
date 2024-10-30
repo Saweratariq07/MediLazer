@@ -1,0 +1,18 @@
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 rgba(231, 205, 34, 0); /* No shadow at start */
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(231, 205, 34, 0.8), 0 0 40px rgba(107, 96, 25, 0.8); /* Yellow glow */
+    }
+    100% {
+      box-shadow: 0 0 0 rgba(231, 205, 34, 0); /* No shadow again */
+    }
+  }
+  
+  .animate-button1 {
+    animation: pulse 2s infinite; /* Apply the pulse animation continuously */
+    border: 2px solid transparent; /* Keeps space around the button */
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
