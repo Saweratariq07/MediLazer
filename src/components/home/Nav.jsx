@@ -83,7 +83,7 @@ function Nav() {
         <Link to="/" className="font-medium text-yellow-400">{text.Home[language]}</Link>
         <Link to="/price" className="font-medium text-yellow-400">{text.Pricelist[language]}</Link>
         <Link to="/portfolio" className="font-medium text-yellow-400">{text.Portfolio[language]}</Link>
-        <Link to="/section" className="font-medium text-yellow-400" target="_blank">{text.About[language]}</Link>
+        <Link to="/section" className="font-medium text-yellow-400" >{text.About[language]}</Link>
       </div>
 
       <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
