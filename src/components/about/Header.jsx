@@ -44,7 +44,7 @@ function Header() {
             padding: "20px",
         }}
     >
-        <div className='pt-24'>
+        <div className='pt-32'>
             <img src="s.png" alt="img" className='h-[196px] w-[256px]' />
         </div>
         <div className="">
