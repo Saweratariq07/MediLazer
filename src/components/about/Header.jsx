@@ -11,75 +11,80 @@ function Header() {
         <div className='bg-black'>
             
 
-                        <div style={{ position: "relative", overflow: "hidden",   }}>
-    <video
-        src="1.mp4"
-        autoPlay
-        loop
-        muted
-        style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover", 
-            zIndex: 0, 
-        }}
-    />
-
-    <div
-        className="content"
-        style={{
-            position: "relative",
-            zIndex: 1, 
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            textAlign: "center",
-            color: "white",
-            width: "100%",
-            height: "100%",
-            padding: "20px",
-        }}
-    >
-        <div className='pt-32'>
-            <img src="s.png" alt="img" className='h-[196px] w-[256px]' />
-        </div>
-        <div className="">
-
-            <h1 className="text-lg md:text-3xl mb-4 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#49441f] pt-14 bg-clip-text text-transparent">
-                Welcome to MediLaser, your go-to for safe and effective hair removal. Achieve smooth, hair-free skin - schedule your consultation today.
-            </h1>
-        </div>
-
-     
-
-        <div className="font-normal mt-16 flex flex-col md:flex-row items-center  justify-center space-y-4 md:space-y-0 md:space-x-4">
-            <div className="btn">
-                <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
-                    Book an Appointment
-                </button>
+            <div style={{ position: "relative", overflow: "hidden" }}>
+            <video
+                src="1.mp4"
+                autoPlay
+                loop
+                muted
+                style={{
+                    position: "absolute",
+                    top: 0,
+                    left: 0,
+                    width: "100%",
+                    height: "100%",
+                    objectFit: "cover",
+                    zIndex: 0,
+                }}
+            />
+        
+            <div
+                className="content"
+                style={{
+                    position: "relative",
+                    zIndex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    textAlign: "center",
+                    color: "white",
+                    width: "100%",
+                    height: "100%",
+                    padding: "20px",
+                }}
+            >
+                <div className="pt-32">
+                    <img src="s.png" alt="img" className="h-[196px] w-[256px]" />
+                </div>
+                <div>
+                    <h1 className="text-lg md:text-3xl pt-8 text-[#EAD023]">
+                        Welcome to MediLaser, your go-to for safe and effective hair removal. Achieve smooth, hair-free skin - schedule your consultation today.
+                    </h1>
+                </div>
+                <div>
+                    <h1 className="text-lg md:text-3xl text-[#EAD023] pt-4">
+                        Package Deal 5+1 Free
+                    </h1>
+                </div>
+        
+                <div className="font-normal mt-16 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                    <div className="btn">
+                        <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
+                            Book an Appointment
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div className="service ">
-        <div className="justify-center items-center px-4 sm:px-6 w-full">
-            <h1 className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent sm:text-lg inline-block text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
-                Our Service
-            </h1>
-            <div className=" w-full">
-                <Slider />
-            </div>
+        
+            <div className="service" style={{ position: "relative", zIndex: 2 }}>
+    <div className="justify-center items-center px-4 py-4 sm:px-6 w-full">
+        <h1 className="text-[#EAD023] text-3xl md:text-4xl lg:text-5xl font-semibold text-center">
+            Our Service
+        </h1>
+        <div className="border-t-4 border-[#EAD023] mt-2 mx-auto" style={{ width: '120px' }}></div> 
+        <div className="w-full mt-8">
+            <Slider />
         </div>
     </div>
 </div>
 
+        </div>
+        
+
             <div className=" container-fluid flex flex-col justify-center px-6 items-center ">
 
-                <div className="service py-8">
+                <div className=" py-8">
                     <div className="justify-center items-center bg-black px-6">
                         <h1 className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent inline-block text-3xl md:text-4xl lg:text-5xl font-semibold" style={{ borderBottom: "2px solid #eab308" }}>
                             Before and after

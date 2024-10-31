@@ -52,7 +52,7 @@ function Nav() {
     Pricelist: { English: 'Pricelist', Polish: 'Cennik', Dutch: 'Prijslijst' },
     Portfolio: { English: 'Portfolio', Polish: 'Portfolio', Dutch: 'Portefeuille' },
     About: { English: 'About', Polish: 'O nas', Dutch: 'Over' },
-    Contact: { English: 'Contact', Polish: 'Kontakt', Dutch: 'Contact' },
+    Contact: { English: 'Contact Us', Polish: 'Kontakt', Dutch: 'Contact' },
   };
 
   return (
@@ -79,12 +79,33 @@ function Nav() {
         </div>
       </div>
 
-      <div className="hidden md:flex md:space-x-10">
-        <Link to="/" className="font-medium text-yellow-400">{text.Home[language]}</Link>
-        <Link to="/price" className="font-medium text-yellow-400">{text.Pricelist[language]}</Link>
-        <Link to="/portfolio" className="font-medium text-yellow-400">{text.Portfolio[language]}</Link>
-        <Link to="/section" className="font-medium text-yellow-400" >{text.About[language]}</Link>
-      </div>
+     <div className="hidden md:flex md:space-x-10">
+     <Link 
+       to="/" 
+       className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+     >
+       {text.Home[language]}
+     </Link>
+     <Link 
+       to="/price" 
+       className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/price' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+     >
+       {text.Pricelist[language]}
+     </Link>
+     <Link 
+       to="/portfolio" 
+       className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/portfolio' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+     >
+       {text.Portfolio[language]}
+     </Link>
+     <Link 
+       to="/section" 
+       className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/section' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+     >
+       {text.About[language]}
+     </Link>
+   </div>
+   
 
       <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
         <span className="inline-flex">

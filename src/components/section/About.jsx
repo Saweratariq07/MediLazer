@@ -4,30 +4,34 @@ import Faq from "../faqq/Faq";
 const About = () => {
   return (
     <div className="bg-black">
-  <div className="bg-black pt-24 min-h-screen py-12 flex items-center justify-center">
-  <div className="container mx-auto bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 items-center px-4 md:px-16">
-    <div className="text-left">
-      <h1 className="text-3xl font-normal leading-snug">
-        Welcome To MediLaser, Your Go-To Destination For Achieving Smooth, Hair-Free Skin. Our Experienced Team Of Certified Professionals Specializes In Safe And Effective Laser Hair Removal Tailored To Your Unique Needs. With Cutting-Edge Technology, We Prioritize Your Comfort And Safety At Every Step. From Your Initial Consultation To Personalized Follow-Up Care, We’re Dedicated To Providing An Exceptional Experience In A Welcoming Environment. Discover The Confidence That Comes With Beautifully Smooth Skin—Schedule Your Consultation At MediLaser Today!
-      </h1>
+<div class="bg-black pt-24 min-h-screen py-12 flex items-center justify-center">
+    <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 items-center px-4 md:px-16 text-yellow-300">
+        
+        <div class="text-left">
+            <h1 class="text-xl font-normal leading-snug">
+                Welcome To MediLaser, Your Go-To Destination For Achieving Smooth, Hair-Free Skin. Our Experienced Team Of Certified Professionals Specializes In Safe And Effective Laser Hair Removal Tailored To Your Unique Needs. With Cutting-Edge Technology, We Prioritize Your Comfort And Safety At Every Step. From Your Initial Consultation To Personalized Follow-Up Care, We’re Dedicated To Providing An Exceptional Experience In A Welcoming Environment. Discover The Confidence That Comes With Beautifully Smooth Skin—Schedule Your Consultation At MediLaser Today!
+            </h1>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center justify-end space-x-0 md:space-x-4 md:space-y-0">
+            <div class="relative w-full h-[300px] md:w-[250px] overflow-hidden rounded-lg shadow-inner mb-4 md:mb-0">
+                <div class="absolute inset-0 bg-gradient-to-b from-black via-transparent to-black z-10"></div>
+                <img src="2.jpg" alt="MediLaser" class="w-full h-full object-cover" />
+            </div>
+
+            <div class="flex flex-col space-y-4">
+                <div class="w-24 h-32 overflow-hidden rounded-lg shadow-inner">
+                    <img src="pi.png" alt="Team member" class="w-full h-full object-cover" />
+                </div>
+                <div class="w-24 h-32 overflow-hidden rounded-lg shadow-inner">
+                    <img src="pi.png" alt="Another team member" class="w-full h-full object-cover" />
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div className="md:w-96 flex items-center justify-end relative h-[500px]">
-  <div className="absolute inset-x-0 top-0 h-16 bg-gradient-to-b from-black to-transparent z-10" />
-  
-  <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-black to-transparent z-10" />
-  
-  <div className="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-black to-transparent z-10" />
-  
-  <div className="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-black to-transparent z-10" />
-
-  <div className="relative w-full overflow-hidden rounded-lg shadow-inner h-full">
-    <img src="2.jpg" alt="MediLaser" className="w-full h-full object-cover" />
-  </div>
 </div>
 
-  </div>
-</div>
+
 
 <Faq/>
     <div className="max-w-7xl mx-auto mt-12">
