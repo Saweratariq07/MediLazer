@@ -49,19 +49,12 @@ function Header() {
         </div>
         <div className="">
 
-            <h1 className="text-xl md:text-4xl mb-4 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#49441f] pt-14 bg-clip-text text-transparent">
+            <h1 className="text-lg md:text-3xl mb-4 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#49441f] pt-14 bg-clip-text text-transparent">
                 Welcome to MediLaser, your go-to for safe and effective hair removal. Achieve smooth, hair-free skin - schedule your consultation today.
             </h1>
         </div>
 
-        <div className="">
-            <h2 className="text-xl md:text-4xl bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
-                Explore our Advanced Hair Removal
-            </h2>
-            <h2 className="text-xl md:text-4xl mb-4 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
-                Laser Treatment
-            </h2>
-        </div>
+     
 
         <div className="font-normal mt-16 flex flex-col md:flex-row items-center  justify-center space-y-4 md:space-y-0 md:space-x-4">
             <div className="btn">
