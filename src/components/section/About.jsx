@@ -4,7 +4,7 @@ import Faq from "../faqq/Faq";
 const About = () => {
   return (
     <div className="bg-black">
-<div class="bg-black pt-24 min-h-screen py-12 flex items-center justify-center">
+<div class="bg-black pt-44 min-h-screen py-12 flex items-center justify-center">
     <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-8 items-center px-4 md:px-16 text-yellow-300">
         
         <div class="text-left">

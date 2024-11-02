@@ -5,7 +5,6 @@ const Consult = () => {
   return (
     <div className="bg-black text-white min-h-screen py-10">
       <div className="relative min-h-screen bg-black">
-        {/* Increase background height here */}
         <div className="absolute inset-0 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] h-[70vh] w-full"></div>
         <div className="absolute inset-0 h-[70vh] w-full bg-gradient-to-r from-black via-[#282828] to-[#3b3b3b] opacity-70"></div>
         
