@@ -9,6 +9,7 @@ function Nav() {
   const { language, setLanguage } = useLanguage();
   const location = useLocation();
 
+  // Google Translate Initialization
   useEffect(() => {
     const addGoogleTranslateScript = () => {
       const script = document.createElement('script');
@@ -35,6 +36,19 @@ function Nav() {
     setLanguage(newLanguage);
     setIsDropdownOpen(false);
     closeMobileMenu();
+
+    // Trigger language change in Google Translate
+    if (window.google && window.google.translate) {
+      const translateElement = window.google.translate.TranslateElement;
+      const translate = new translateElement(
+        {
+          pageLanguage: 'en',
+          includedLanguages: 'en,pl,nl',
+        },
+        'google_translate_element'
+      );
+      translate.translatePage(newLanguage);
+    }
   };
 
   const toggleMobileMenu = () => {
@@ -61,7 +75,6 @@ function Nav() {
     <nav className="navbar-transparent flex pt-12 items-center justify-between sm:h-10 md:justify-center py-6 px-4">
       <div className="flex items-center flex-1 md:absolute md:inset-y-0 md:left-0">
         <div className="flex items-center justify-between w-full md:w-auto">
-          {/* Logo Visible on Mobile and Desktop */}
           <Link to="/" aria-label="Home" className="bg-transparent mb-2 ms-4">
             <img src="logo.png" className="bg-transparent" alt="logo" />
           </Link>
@@ -83,18 +96,16 @@ function Nav() {
       </div>
 
       <div className="hidden md:flex md:space-x-10">
-        <Link to="/" className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}>
-          {text.Home[language]}
-        </Link>
-        <Link to="/price" className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/price' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}>
-          {text.Pricelist[language]}
-        </Link>
-        <Link to="/portfolio" className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/portfolio' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}>
-          {text.Portfolio[language]}
-        </Link>
-        <Link to="/section" className={`font-medium text-yellow-400 pb-1 ${location.pathname === '/section' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}>
-          {text.About[language]}
-        </Link>
+        {/* Navigation links */}
+        {Object.keys(text).map((key) => (
+          <Link
+            to={`/${key.toLowerCase()}`} // Dynamic URL based on key
+            key={key}
+            className={`font-medium text-yellow-400 pb-1 ${location.pathname === `/${key.toLowerCase()}` ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+          >
+            {text[key][language]}
+          </Link>
+        ))}
       </div>
 
       <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
@@ -111,20 +122,25 @@ function Nav() {
         </span>
       </div>
 
-      {/* Mobile Menu with Logo */}
       {isMobileMenuOpen && (
         <div className="mobile-menu md:hidden fixed inset-0 bg-black bg-opacity-80 z-50">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-black p-4 rounded-lg mt-16">
-            {/* Logo inside mobile menu */}
             <div className="flex justify-center mb-4">
               <Link to="/" onClick={closeMobileMenu}>
                 <img src="logo.png" className="bg-transparent" alt="logo" />
               </Link>
             </div>
-            <Link to="/" onClick={closeMobileMenu} className="block px-3 py-2 text-lg font-medium text-[#cdb61f]">{text.Home[language]}</Link>
-            <Link to="/price" onClick={closeMobileMenu} className="block px-3 py-2 text-lg font-medium text-[#cdb61f]">{text.Pricelist[language]}</Link>
-            <Link to="/portfolio" onClick={closeMobileMenu} className="block px-3 py-2 text-lg font-medium text-[#cdb61f]">{text.Portfolio[language]}</Link>
-            <Link to="/section" onClick={closeMobileMenu} className="block px-3 py-2 text-lg font-medium text-[#cdb61f]">{text.About[language]}</Link>
+            {/* Mobile Menu Links */}
+            {Object.keys(text).map((key) => (
+              <Link
+                to={`/${key.toLowerCase()}`}
+                onClick={closeMobileMenu}
+                key={key}
+                className="block px-3 py-2 text-lg font-medium text-[#cdb61f]"
+              >
+                {text[key][language]}
+              </Link>
+            ))}
             <Link to="/appoinment" onClick={closeMobileMenu} className="block w-full text-left px-3 py-2">
               <button className="bg-transparent text-[#cdb61f] py-2 px-4 rounded-md w-full md:w-auto">
                 {text.Contact[language]}
@@ -137,9 +153,9 @@ function Nav() {
               </button>
               {isDropdownOpen && (
                 <div className="mt-2 bg-black border border-gray-200 rounded-md shadow-lg">
-                  <button onClick={() => handleLanguageChange('English')} className="block px-4 py-2 text-sm text-white hover:text-[#cdb61f]">English</button>
-                  <button onClick={() => handleLanguageChange('Polish')} className="block px-4 py-2 text-sm text-white hover:text-[#cdb61f]">Polish</button>
-                  <button onClick={() => handleLanguageChange('Dutch')} className="block px-4 py-2 text-sm text-white hover:text-[#cdb61f]">Dutch</button>
+                  <button onClick={() => handleLanguageChange('English')} className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 w-full text-left">English</button>
+                  <button onClick={() => handleLanguageChange('Polish')} className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 w-full text-left">Polish</button>
+                  <button onClick={() => handleLanguageChange('Dutch')} className="block px-4 py-2 text-sm text-gray-300 hover:bg-gray-700 w-full text-left">Dutch</button>
                 </div>
               )}
             </div>
