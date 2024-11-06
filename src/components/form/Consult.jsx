@@ -9,7 +9,7 @@ const Consult = () => {
         <div className="absolute inset-0 h-[70vh] w-full bg-gradient-to-r from-black via-[#282828] to-[#3b3b3b] opacity-70"></div>
         
         <div className="relative max-w-full mx-auto flex justify-center py-20" style={{ paddingLeft: '20px', paddingRight: '0px' }}>
-          <div className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] w-full lg:w-[calc(100%+20px)] xl:w-[calc(100%+20px)] p-12 rounded-lg shadow-lg">
+          <div className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] w-full lg:w-[calc(100%+20px)] xl:w-[calc(100%+20px)] p-12  shadow-lg">
             <h1 className="text-3xl md:text-4xl font-bold mb-6 text-black text-center">Book Consultation</h1>
             
             <div className="grid grid-cols-1 items-center justify-center md:grid-cols-2 gap-4 mb-6">

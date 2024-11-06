@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 
 const FAQ = ({ faqs, openIndex, toggleFAQ }) => {
     return (
-        <div className="flex flex-col space-y-4"> {/* Use flex-col to stack items vertically */}
+        <div className="flex flex-col space-y-4"> 
             {faqs.map((faq, index) => (
                 <div key={index} className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] rounded-lg shadow-md">
                     <div className={`border-b border-gray-300 ${openIndex === index ? 'bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317]' : ''}`}>

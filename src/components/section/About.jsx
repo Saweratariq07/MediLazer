@@ -1,5 +1,6 @@
 import React from "react";
 import Faq from "../faqq/Faq";
+import Laser from "../lazer/Lazer";
 
 const About = () => {
   return (
@@ -34,6 +35,14 @@ const About = () => {
 
 
 <Faq/>
+<div className="flex items-center justify-center space-x-4">
+                        <img src="sun.png" alt="Sun" className="w-14 h-14" />
+                        <h1 className="text-xl font-bold text-center bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
+                        procedure
+                        </h1>
+                        <img src="sun.png" alt="Sun" className="w-14 h-14" />
+                    </div>
+<Laser/>
     <div className="max-w-7xl mx-auto mt-12">
         <h2 className="text-xl bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold mb-4 text-left">
           Why You Choose Us?
