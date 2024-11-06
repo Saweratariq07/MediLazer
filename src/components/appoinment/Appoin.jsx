@@ -66,8 +66,8 @@ const Appoin = () => {
   };
 
   return (
-    <div className="bg-black min-h-screen pt-24 flex items-center justify-center py-10">
-      <div className="relative w-full max-w-2xl bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] p-12 rounded-lg border-black">
+    <div className="bg-black min-h-screen flex items-center justify-center pt-40 py-10">
+      <div className="relative w-full max-w-2xl bg-gradient-to-r  from-[#e7cd22] via-[#b29f1f] to-[#373317] p-12 rounded-lg border-black">
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <input
