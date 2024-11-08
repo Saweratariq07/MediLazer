@@ -28,11 +28,11 @@ const Consult = () => {
                 placeholder="Email"
                 className="w-full md:w-64 p-3 border-2 border-black bg-transparent placeholder-black text-black focus:outline-none mx-auto"
               />
-              <input
+              {/* <input
                 type="text"
                 placeholder="Previous Medication"
                 className="w-full md:w-64 p-3 border-2 border-black bg-transparent placeholder-black text-black focus:outline-none mx-auto"
-              />
+              /> */}
               <input
                 type="date"
                 placeholder="Date"
@@ -43,7 +43,7 @@ const Consult = () => {
             <div className="flex flex-col sm:flex-row items-center sm:items-center justify-center gap-4 mt-6">
             <div className="btn">
   <button className="bg-black py-2 px-4 rounded-md w-full md:w-auto relative animate-button1">
-    <span className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-semibold">
+    <span className="text-[#e7cd22]  font-semibold">
       Ask Question
     </span>
   </button>
@@ -53,7 +53,7 @@ const Consult = () => {
               <span className="font-semibold text-black">Or</span>
               <div className="btn">
   <button className="bg-black py-2 px-4 rounded-md w-full md:w-auto relative animate-button1">
-    <span className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-semibold">
+    <span className="text-[#e7cd22]  font-semibold">
       Book Appoinment
     </span>
   </button>

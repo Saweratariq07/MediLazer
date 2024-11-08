@@ -37,14 +37,14 @@ const About = () => {
 <Faq/>
 <div className="flex items-center justify-center space-x-4">
                         <img src="sun.png" alt="Sun" className="w-14 h-14" />
-                        <h1 className="text-xl font-bold text-center bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
+                        <h1 className="text-xl font-bold text-center text-[#e7cd22] ">
                         procedure
                         </h1>
                         <img src="sun.png" alt="Sun" className="w-14 h-14" />
                     </div>
 <Laser/>
     <div className="max-w-7xl mx-auto mt-12">
-        <h2 className="text-xl bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold mb-4 text-left">
+        <h2 className="text-xl text-[#e7cd22]  font-bold mb-4 text-left">
           Why You Choose Us?
         </h2>
         <div className="flex justify-center flex-wrap">
@@ -54,7 +54,7 @@ const About = () => {
               alt="Safety"
               className="w-80 h-64 object-cover rounded-lg"
             />
-            <p className="mt-2 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold">Safety</p>
+            <p className="mt-2 text-[#e7cd22] font-bold">Safety</p>
           </div>
 
           <div className="text-center mx-2">
@@ -63,7 +63,7 @@ const About = () => {
               alt="Expertise"
               className="w-64 h-80 object-cover rounded-lg"
             />
-            <p className="mt-2 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold">Expertise</p>
+            <p className="mt-2 text-[#e7cd22]  font-bold">Expertise</p>
           </div>
 
           <div className="text-center mx-2">
@@ -72,7 +72,7 @@ const About = () => {
               alt="Advanced Technology"
               className="w-80 h-64 object-cover rounded-lg"
             />
-            <p className="mt-2 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold">Advanced Technology</p>
+            <p className="mt-2 text-[#e7cd22]  font-bold">Advanced Technology</p>
           </div>
         </div>
       </div>

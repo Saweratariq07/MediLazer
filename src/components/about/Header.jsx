@@ -6,6 +6,7 @@ import Slider from '../carosoul/Slider';
 import Slide from '../men/Slide';
 import FAQSection from '../faq/FAQ';
 import Consult from '../form/Consult';
+import { Link } from 'react-router-dom';
 function Header() {
     return (
         <div className='bg-black'>
@@ -60,9 +61,12 @@ function Header() {
         
                 <div className="font-normal mt-16 flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
                     <div className="btn">
-                        <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
-                            Book an Appointment
-                        </button>
+                    <a href="https://medi-laser-aesthetic-lucy.as.me/schedule/f0c5d1b7/?locations=Dreef%202%2C%204875%20AC%20Etten-Leur" target="_blank" rel="noopener noreferrer">
+  <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
+    Book an Appointment
+  </button>
+</a>
+
                     </div>
                 </div>
             </div>
@@ -86,13 +90,13 @@ function Header() {
 
                 <div className=" py-8">
                     <div className="justify-center items-center bg-black px-6">
-                        <h1 className="bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent inline-block text-3xl md:text-4xl lg:text-5xl font-semibold" style={{ borderBottom: "2px solid #eab308" }}>
+                        <h1 className=" text-[#e7cd22]  inline-block text-3xl md:text-4xl lg:text-5xl font-semibold" style={{ borderBottom: "2px solid #eab308" }}>
                             Before and after
                         </h1>
-                        <h4 className='bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent text-3xl'>
+                        <h4 className=' text-[#e7cd22]  text-3xl'>
                             From underarms to bikini lines and legs to lips, the results of laser hair removal at MedLaser are exceptional and truly unrivaled.
                         </h4>
-                        <h6 className='bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent text-lg text-start'>Our laser hair removal treatment is versatile enough to target any area of the body and is safe for all skin tones. Whether you have dark or fair skin,
+                        <h6 className='text-[#e7cd22] text-lg text-start'>Our laser hair removal treatment is versatile enough to target any area of the body and is safe for all skin tones. Whether you have dark or fair skin,
                             we can customize our laser settings to deliver the most effective results tailored to your complexion.</h6>
 
                         <Slide />
@@ -123,20 +127,21 @@ function Header() {
                         </div>
 
                         <div className="md:w-1/2 items-center justify-center md:justify-start mt-8 mx-auto px-6">
-                            <h1 className="text-2xl font-bold text-center md:text-left bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
+                            <h1 className="text-2xl font-bold text-center md:text-left text-[#e7cd22]  ">
                                 Benefits of removing hair with laser
                             </h1>
 
-                            <div className="flex bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent gap-3 py-2">
+                            <div className="flex  text-[#e7cd22] gap-3 py-2">
                                 <FaCircleCheck className="mt-1 text-yellow-500" /> Long lasting results
                             </div>
-                            <div className="flex bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent gap-3 py-2">
+                            <div className="flex  text-[#e7cd22] gap-3 py-2">
                                 <FaCircleCheck className="mt-1 text-yellow-500" /> Precision and speed
                             </div>
-                            <div className="flex bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent gap-3 py-2">
+                            <div className="flex text-[#e7cd22]  gap-3 py-2">
                                 <FaCircleCheck className="mt-1 text-yellow-500" /> Painless procedure
                             </div>
-                            <div className="flex bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent gap-3 py-2">
+
+                            <div className="flex  text-[#e7cd22] gap-3 py-2">
                                 <FaCircleCheck className="mt-1 text-yellow-500" /> Book appointment with us and get an extra 20% discount
                             </div>
 
@@ -155,7 +160,7 @@ function Header() {
 
             <Consult />
             <div className="max-w-7xl mx-auto mt-12">
-                <h2 className="text-2xl bg-gradient-to-r  from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold mb-4 text-left">
+                <h2 className="text-2xl  text-[#e7cd22]  bg-clip-text text-transparent font-bold mb-4 text-left">
                     Why You Choose Us?
                 </h2>
                 <div className="flex justify-center flex-wrap">
@@ -165,7 +170,7 @@ function Header() {
                             alt="Safety"
                             className="w-80 h-64 object-cover rounded-lg"
                         />
-                        <p className="mt-2 bg-gradient-to-r text-lg from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold">Safety</p>
+                        <p className="mt-2 text-lg text-[#e7cd22]  font-bold">Safety</p>
                     </div>
 
                     <div className="text-center mx-2">
@@ -174,7 +179,7 @@ function Header() {
                             alt="Expertise"
                             className="w-64 h-80 object-cover rounded-lg"
                         />
-                        <p className="mt-2 bg-gradient-to-r from-[#e7cd22] text-lg via-[#b29f1f] to-[#373317] bg-clip-text text-transparent font-bold">Expertise</p>
+                        <p className="mt-2  text-[#e7cd22]   font-bold">Expertise</p>
                     </div>
 
                     <div className="text-center mx-2">
@@ -183,7 +188,7 @@ function Header() {
                             alt="Advanced Technology"
                             className="w-80 h-64 object-cover rounded-lg"
                         />
-                        <p className="mt-2 bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent text-lg font-bold">Advanced Technology</p>
+                        <p className="mt-2  text-[#e7cd22] bg-clip-text text-transparent text-lg font-bold">Advanced Technology</p>
                     </div>
                 </div>
             </div>

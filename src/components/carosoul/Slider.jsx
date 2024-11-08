@@ -76,7 +76,7 @@ const Slider = () => {
                   className="w-full h-40 sm:h-48 md:h-60 lg:h-72 object-cover rounded-lg"
                 />
                 <div className="p-4 text-center">
-                  <h2 className="text-2xl font-bold bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent">
+                  <h2 className="text-2xl font-bold text-[#e7cd22] ">
                     {slide.title}
                   </h2>
                   <p className="mt-2 text-gray-500">{slide.description}</p>

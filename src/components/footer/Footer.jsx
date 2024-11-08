@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-black  pt-10">
-      <div className="max-w-7xl mx-auto  bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent grid grid-cols-1 md:grid-cols-5 gap-8 px-4">
+      <div className="max-w-7xl mx-auto  text-[#e7cd22]  grid grid-cols-1 md:grid-cols-5 gap-8 px-4">
         <div className="md:col-span-2">
           <img src="footer.png" alt="Logo" className="mb-4" /> 
           <p className="text-yello-400 text-start mb-4">Subscribe To Our Newsletter</p>
@@ -21,7 +21,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className=" bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent mb-4">Resources</h3>
+          <h3 className=" text-[#e7cd22]  mb-4">Resources</h3>
           <ul className="space-y-2">
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
@@ -30,7 +30,7 @@ const Footer = () => {
         </div>
 
         <div>
-          <h3 className=" bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent mb-4">Blog</h3>
+          <h3 className=" text-[#e7cd22]  mb-4">Blog</h3>
           <ul className="space-y-2">
             <li>Lorem Ipsum</li>
             <li>Lorem Ipsum</li>
@@ -40,7 +40,7 @@ const Footer = () => {
 
         {/* Contact */}
         <div>
-          <h3 className=" bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent mb-4">Contact</h3>
+          <h3 className="text-[#e7cd22]  mb-4">Contact</h3>
           <ul className="space-y-2">
             <li>info@onetwo.com</li>
             <li>www.onetwo.com</li>
@@ -52,7 +52,7 @@ const Footer = () => {
 
         {/* Opening Hours */}
         <div>
-          <h3 className=" bg-gradient-to-r from-[#e7cd22] via-[#b29f1f] to-[#373317] bg-clip-text text-transparent mb-4">Opening Hours</h3>
+          <h3 className=" text-[#e7cd22]  mb-4">Opening Hours</h3>
           <ul className="space-y-2">
             <li>Mon-Fri</li>
             <li>9am-9pm</li>
