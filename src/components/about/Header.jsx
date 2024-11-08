@@ -85,113 +85,140 @@ function Header() {
 
         </div>
         
+        
+  <div className="container-fluid flex flex-col justify-center px-6 items-center">
+    <div className="py-8">
+      <div className="justify-center items-center bg-black px-6 relative">
+        {/* Background Video */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            src="1.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-            <div className=" container-fluid flex flex-col justify-center px-6 items-center ">
+        {/* Content */}
+        <div className="relative z-10 text-center">
+          <h1 className="text-[#e7cd22] inline-block text-3xl md:text-4xl lg:text-5xl font-semibold" style={{ borderBottom: "2px solid #eab308" }}>
+            Before and after
+          </h1>
+          <h4 className='text-[#e7cd22] text-3xl'>
+            From underarms to bikini lines and legs to lips, the results of laser hair removal at MedLaser are exceptional and truly unrivaled.
+          </h4>
+          <h6 className='text-[#e7cd22] text-lg text-start'>
+            Our laser hair removal treatment is versatile enough to target any area of the body and is safe for all skin tones. Whether you have dark or fair skin,
+            we can customize our laser settings to deliver the most effective results tailored to your complexion.
+          </h6>
 
-                <div className=" py-8">
-                    <div className="justify-center items-center bg-black px-6">
-                        <h1 className=" text-[#e7cd22]  inline-block text-3xl md:text-4xl lg:text-5xl font-semibold" style={{ borderBottom: "2px solid #eab308" }}>
-                            Before and after
-                        </h1>
-                        <h4 className=' text-[#e7cd22]  text-3xl'>
-                            From underarms to bikini lines and legs to lips, the results of laser hair removal at MedLaser are exceptional and truly unrivaled.
-                        </h4>
-                        <h6 className='text-[#e7cd22] text-lg text-start'>Our laser hair removal treatment is versatile enough to target any area of the body and is safe for all skin tones. Whether you have dark or fair skin,
-                            we can customize our laser settings to deliver the most effective results tailored to your complexion.</h6>
+          <Slide />
+        </div>
+      </div>
+    </div>
+    <div>
+  <div className="container mx-auto px-6 py-4">
+    <FAQSection />
+  </div>
 
-                        <Slide />
-                    </div>
-                </div>
+  <div className="container mx-auto px-6 py-10">
+    <div className="flex flex-col md:flex-row md:space-x-0">
+      <div className="md:w-1/2 flex items-center justify-center relative">
+        
+        {/* Video Background */}
+        <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            loop
+            muted
+            src="video.mp4"
+          >
+            Your browser does not support the video tag.
+          </video>
+        </div>
 
-                <div className="container mx-auto px-6 py-4">
-                    <FAQSection />
-                </div>
+        {/* Overlay for better text visibility */}
+        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black to-transparent z-10" />
+        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent z-10" />
 
-                <div className="container mx-auto px-6 py-10">
-                    <div className="flex flex-col md:flex-row md:space-x-0">
-                        <div className="md:w-1/2 flex items-center justify-center relative">
-                            <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black to-transparent z-10" />
-                            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent z-10" />
+        {/* Content */}
+        <div className="relative w-full overflow-hidden rounded-lg shadow-inner z-20">
+          <div className="flex items-center justify-center flex-col md:flex-row">
+            <div className="md:w-1/2 items-center justify-center md:justify-start mt-8 mx-auto px-6">
+              <h1 className="text-2xl font-bold text-center md:text-left text-[#e7cd22]">
+                Benefits of removing hair with laser
+              </h1>
 
-                            <div className="relative w-full overflow-hidden rounded-lg shadow-inner">
-                                <video
-                                    className="w-full h-[500px] object-cover rounded-lg"
-                                    autoPlay
-                                    loop
-                                    muted
-                                    src="video.mp4"
-                                >
-                                    Your browser does not support the video tag.
-                                </video>
-                            </div>
-                        </div>
+              <div className="flex text-[#e7cd22] gap-3 py-2">
+                <FaCircleCheck className="mt-1 text-yellow-500" /> Long lasting results
+              </div>
+              <div className="flex text-[#e7cd22] gap-3 py-2">
+                <FaCircleCheck className="mt-1 text-yellow-500" /> Precision and speed
+              </div>
+              <div className="flex text-[#e7cd22] gap-3 py-2">
+                <FaCircleCheck className="mt-1 text-yellow-500" /> Painless procedure
+              </div>
+              <div className="flex text-[#e7cd22] gap-3 py-2">
+                <FaCircleCheck className="mt-1 text-yellow-500" /> Book appointment with us and get an extra 20% discount
+              </div>
 
-                        <div className="md:w-1/2 items-center justify-center md:justify-start mt-8 mx-auto px-6">
-                            <h1 className="text-2xl font-bold text-center md:text-left text-[#e7cd22]  ">
-                                Benefits of removing hair with laser
-                            </h1>
-
-                            <div className="flex  text-[#e7cd22] gap-3 py-2">
-                                <FaCircleCheck className="mt-1 text-yellow-500" /> Long lasting results
-                            </div>
-                            <div className="flex  text-[#e7cd22] gap-3 py-2">
-                                <FaCircleCheck className="mt-1 text-yellow-500" /> Precision and speed
-                            </div>
-                            <div className="flex text-[#e7cd22]  gap-3 py-2">
-                                <FaCircleCheck className="mt-1 text-yellow-500" /> Painless procedure
-                            </div>
-
-                            <div className="flex  text-[#e7cd22] gap-3 py-2">
-                                <FaCircleCheck className="mt-1 text-yellow-500" /> Book appointment with us and get an extra 20% discount
-                            </div>
-
-                            <div className="flex items-center justify-start md:justify-start space-x-4 mt-4">
-                                <img src="sun.png" alt="Sun" className="w-10 h-10" />
-                                <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
-                                    Book Appointment
-                                </button>
-                                <img src="sun.png" alt="Sun" className="w-10 h-10" />
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
+              <div className="flex items-center justify-start md:justify-start space-x-4 mt-4">
+                <img src="sun.png" alt="Sun" className="w-10 h-10" />
+                <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
+                  Book Appointment
+                </button>
+                <img src="sun.png" alt="Sun" className="w-10 h-10" />
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-            <Consult />
-            <div className="max-w-7xl mx-auto mt-12">
-                <h2 className="text-2xl  text-[#e7cd22]  bg-clip-text text-transparent font-bold mb-4 text-left">
-                    Why You Choose Us?
-                </h2>
-                <div className="flex justify-center flex-wrap">
-                    <div className="text-center mx-2">
-                        <img
-                            src="19.jpg"
-                            alt="Safety"
-                            className="w-80 h-64 object-cover rounded-lg"
-                        />
-                        <p className="mt-2 text-lg text-[#e7cd22]  font-bold">Safety</p>
-                    </div>
+  </div>
 
-                    <div className="text-center mx-2">
-                        <img
-                            src="2.jpg"
-                            alt="Expertise"
-                            className="w-64 h-80 object-cover rounded-lg"
-                        />
-                        <p className="mt-2  text-[#e7cd22]   font-bold">Expertise</p>
-                    </div>
+  <Consult />
+  <div className="max-w-7xl mx-auto mt-12">
+    <h2 className="text-2xl text-[#e7cd22] bg-clip-text text-transparent font-bold mb-4 text-left">
+      Why You Choose Us?
+    </h2>
+    <div className="flex justify-center flex-wrap">
+      <div className="text-center mx-2">
+        <img
+          src="19.jpg"
+          alt="Safety"
+          className="w-80 h-64 object-cover rounded-lg"
+        />
+        <p className="mt-2 text-lg text-[#e7cd22] font-bold">Safety</p>
+      </div>
 
-                    <div className="text-center mx-2">
-                        <img
-                            src="3.jpg"
-                            alt="Advanced Technology"
-                            className="w-80 h-64 object-cover rounded-lg"
-                        />
-                        <p className="mt-2  text-[#e7cd22]  text-lg font-bold">Advanced Technology</p>
-                    </div>
-                </div>
-            </div>
+      <div className="text-center mx-2">
+        <img
+          src="2.jpg"
+          alt="Expertise"
+          className="w-64 h-80 object-cover rounded-lg"
+        />
+        <p className="mt-2 text-[#e7cd22] font-bold">Expertise</p>
+      </div>
+
+      <div className="text-center mx-2">
+        <img
+          src="3.jpg"
+          alt="Advanced Technology"
+          className="w-80 h-64 object-cover rounded-lg"
+        />
+        <p className="mt-2 text-[#e7cd22] text-lg font-bold">Advanced Technology</p>
+      </div>
+    </div>
+  </div>
+
+
         </div>
     );
 }

@@ -46,7 +46,7 @@ const Slide = () => {
   };
 
   return (
-    <div className="flex items-center justify-center min-h-screen bg-black">
+    <div className="flex items-center justify-center min-h-screen bg-transparent">
       <div className="relative w-full max-w-6xl mx-auto">
         <div className="overflow-hidden relative rounded-lg">
           <div
@@ -55,7 +55,7 @@ const Slide = () => {
           >
             {slides.map((slide, index) => (
               <div className="min-w-full sm:min-w-[100%] lg:min-w-[33.33%] text-center" key={index}>
-                <div className="p-4 bg-black shadow-lg rounded-lg">
+                <div className="p-4 bg-transparent shadow-lg rounded-lg">
                   <img
                     src={slide.src}
                     alt={slide.alt}
