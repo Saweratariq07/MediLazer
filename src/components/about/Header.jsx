@@ -85,7 +85,7 @@ function Header() {
 
         </div>
         
-        
+        <div>
   <div className="container-fluid flex flex-col justify-center px-6 items-center">
     <div className="py-8">
       <div className="justify-center items-center bg-black px-6 relative">
@@ -119,68 +119,59 @@ function Header() {
         </div>
       </div>
     </div>
-    <div>
-  <div className="container mx-auto px-6 py-4">
-    <FAQSection />
-  </div>
 
-  <div className="container mx-auto px-6 py-10">
-    <div className="flex flex-col md:flex-row md:space-x-0">
-      <div className="md:w-1/2 flex items-center justify-center relative">
-        
-        {/* Video Background */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 z-0">
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            loop
-            muted
-            src="video.mp4"
-          >
-            Your browser does not support the video tag.
-          </video>
+    <div className="container mx-auto px-6 py-4">
+      <FAQSection />
+    </div>
+
+    <div className="container mx-auto px-6 py-10">
+      <div className="flex flex-col md:flex-row md:space-x-0">
+        <div className="md:w-1/2 flex items-center justify-center relative">
+          <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black to-transparent z-10" />
+          <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent z-10" />
+
+          <div className="relative w-full overflow-hidden rounded-lg shadow-inner">
+            <video
+              className="w-full h-[500px] object-cover rounded-lg"
+              autoPlay
+              loop
+              muted
+              src="video.mp4"
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
-        {/* Overlay for better text visibility */}
-        <div className="absolute top-0 left-0 right-0 h-16 bg-gradient-to-b from-black to-transparent z-10" />
-        <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-black to-transparent z-10" />
+        <div className="md:w-1/2 items-center justify-center md:justify-start mt-8 mx-auto px-6">
+          <h1 className="text-2xl font-bold text-center md:text-left text-[#e7cd22]">
+            Benefits of removing hair with laser
+          </h1>
 
-        {/* Content */}
-        <div className="relative w-full overflow-hidden rounded-lg shadow-inner z-20">
-          <div className="flex items-center justify-center flex-col md:flex-row">
-            <div className="md:w-1/2 items-center justify-center md:justify-start mt-8 mx-auto px-6">
-              <h1 className="text-2xl font-bold text-center md:text-left text-[#e7cd22]">
-                Benefits of removing hair with laser
-              </h1>
+          <div className="flex text-[#e7cd22] gap-3 py-2">
+            <FaCircleCheck className="mt-1 text-yellow-500" /> Long lasting results
+          </div>
+          <div className="flex text-[#e7cd22] gap-3 py-2">
+            <FaCircleCheck className="mt-1 text-yellow-500" /> Precision and speed
+          </div>
+          <div className="flex text-[#e7cd22] gap-3 py-2">
+            <FaCircleCheck className="mt-1 text-yellow-500" /> Painless procedure
+          </div>
 
-              <div className="flex text-[#e7cd22] gap-3 py-2">
-                <FaCircleCheck className="mt-1 text-yellow-500" /> Long lasting results
-              </div>
-              <div className="flex text-[#e7cd22] gap-3 py-2">
-                <FaCircleCheck className="mt-1 text-yellow-500" /> Precision and speed
-              </div>
-              <div className="flex text-[#e7cd22] gap-3 py-2">
-                <FaCircleCheck className="mt-1 text-yellow-500" /> Painless procedure
-              </div>
-              <div className="flex text-[#e7cd22] gap-3 py-2">
-                <FaCircleCheck className="mt-1 text-yellow-500" /> Book appointment with us and get an extra 20% discount
-              </div>
+          <div className="flex text-[#e7cd22] gap-3 py-2">
+            <FaCircleCheck className="mt-1 text-yellow-500" /> Book appointment with us and get an extra 20% discount
+          </div>
 
-              <div className="flex items-center justify-start md:justify-start space-x-4 mt-4">
-                <img src="sun.png" alt="Sun" className="w-10 h-10" />
-                <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
-                  Book Appointment
-                </button>
-                <img src="sun.png" alt="Sun" className="w-10 h-10" />
-              </div>
-            </div>
+          <div className="flex items-center justify-start md:justify-start space-x-4 mt-4">
+            <img src="sun.png" alt="Sun" className="w-10 h-10" />
+            <button className="bg-gradient-to-r font-semibold from-[#e7cd22] via-[#b29f1f] to-[#373317] text-black py-2 px-4 rounded-md w-full md:w-auto animate-button">
+              Book Appointment
+            </button>
+            <img src="sun.png" alt="Sun" className="w-10 h-10" />
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
   </div>
 
   <Consult />
@@ -217,7 +208,7 @@ function Header() {
       </div>
     </div>
   </div>
-
+</div>
 
         </div>
     );
