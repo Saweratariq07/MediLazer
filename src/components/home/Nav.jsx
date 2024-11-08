@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { SiLinktree } from "react-icons/si";
 import { Link, useLocation } from 'react-router-dom';
 import { useLanguage } from '../../LanguageContext';
 import './styles.css';
@@ -52,6 +53,7 @@ function Nav() {
     Pricelist: { English: 'Pricelist', Polish: 'Cennik', Dutch: 'Prijslijst' },
     Portfolio: { English: 'Portfolio', Polish: 'Portfolio', Dutch: 'Portefeuille' },
     About: { English: 'About', Polish: 'O nas', Dutch: 'Over' },
+    Social: { English: 'Social Media', Polish: 'Media Społecznościowe', Dutch: 'Sociale Media' },
     Contact: { English: 'Contact Us', Polish: 'Kontakt', Dutch: 'Contact' },
   };
 
@@ -104,6 +106,16 @@ function Nav() {
         >
           {text.About[language]}
         </Link>
+        <Link 
+  to="https://linktr.ee/medilaserbylucy" 
+  target="_blank" 
+  rel="noopener noreferrer"
+  className={`flex items-center font-medium text-yellow-400 pb-1 ${location.pathname === '/section' ? 'border-b-2 border-yellow-400' : 'hover:border-b-2 hover:border-yellow-400'}`}
+>
+<SiLinktree /> {/* Linktree icon */}
+  {text.Social[language]}
+</Link>
+
       </div>
 
       <div className="hidden md:absolute md:flex md:items-center md:justify-end md:inset-y-0 md:right-0">
