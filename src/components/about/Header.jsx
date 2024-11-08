@@ -188,7 +188,7 @@ function Header() {
                             alt="Advanced Technology"
                             className="w-80 h-64 object-cover rounded-lg"
                         />
-                        <p className="mt-2  text-[#e7cd22] bg-clip-text text-transparent text-lg font-bold">Advanced Technology</p>
+                        <p className="mt-2  text-[#e7cd22]  text-lg font-bold">Advanced Technology</p>
                     </div>
                 </div>
             </div>
